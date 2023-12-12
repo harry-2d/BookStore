@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="name">Book Name:<br>
+            <input type="text" name="name" value="<%= locals.name%>">
+        </label><br>
+        <label for="author">Author:<br>
+            <input type="text" name="author" value="<%= locals.author%>">
+        </label><br>
+        <label for="page">Pages:<br>
+            <input type="number" name="page" value="<%= locals.page%>">
+        </label><br>
+        <label for="price">Price:<br>
+            <input type="number" name="price" value="<%= locals.price%>">
+        </label><br>
+        <label for="review">Review:<br>
+            <input type="text" name="review" value="<%= locals.review%>">
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
